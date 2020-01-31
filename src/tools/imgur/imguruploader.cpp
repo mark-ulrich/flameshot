@@ -1,5 +1,6 @@
 // Copyright(c) 2017-2019 Alejandro Sirgo Rica & Contributors
 //
+//
 // This file is part of Flameshot.
 //
 //     Flameshot is free software: you can redistribute it and/or modify
@@ -108,7 +109,7 @@ void ImgurUploader::upload() {
     m_pixmap.save(&buffer, "PNG");
 
     QUrlQuery urlQuery;
-    urlQuery.addQueryItem(QStringLiteral("title"), QStringLiteral("flameshot_screenshot"));
+//    urlQuery.addQueryItem(QStringLiteral("title"), QStringLiteral("flameshot_screenshot"));
     QString description = FileNameHandler().parsedPattern();
     urlQuery.addQueryItem(QStringLiteral("description"), description);
 
